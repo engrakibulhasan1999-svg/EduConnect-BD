@@ -1,0 +1,91 @@
+import type { Teacher } from "@/lib/types";
+
+export const teachers: Teacher[] = [
+  {
+    id: "1",
+    name: "Dr. Rahima Akter",
+    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    qualification: "Ph.D. in Physics, DU",
+    experience: "15+ Years",
+    specialization: "Physics, Admission Test",
+    bio: "Renowned physics educator with 15+ years of experience helping students achieve top board results and secure admission to premier universities.",
+    courses: 8,
+    students: 2500,
+    rating: 4.9,
+    whatsapp: "8801712345678",
+    facebook: "https://facebook.com",
+    email: "rahima@educonnect.bd",
+    featured: true,
+  },
+  {
+    id: "2",
+    name: "Mohammad Karim",
+    photo: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    qualification: "M.Sc. Mathematics, BUET",
+    experience: "12+ Years",
+    specialization: "Mathematics, SSC/HSC",
+    bio: "Passionate mathematics teacher known for making complex concepts simple and engaging for students of all levels.",
+    courses: 6,
+    students: 1800,
+    rating: 4.8,
+    whatsapp: "8801812345678",
+    facebook: "https://facebook.com",
+    email: "karim@educonnect.bd",
+    featured: true,
+  },
+  {
+    id: "3",
+    name: "Sarah Chowdhury",
+    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+    qualification: "MA English Literature, JU",
+    experience: "10+ Years",
+    specialization: "English, Communication",
+    bio: "Expert English instructor focused on building confidence in reading, writing, and spoken English for academic excellence.",
+    courses: 5,
+    students: 1200,
+    rating: 4.7,
+    whatsapp: "8801912345678",
+    facebook: "https://facebook.com",
+    email: "sarah@educonnect.bd",
+    featured: true,
+  },
+  {
+    id: "4",
+    name: "Fatima Begum",
+    photo: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop",
+    qualification: "M.Sc. Chemistry, DU",
+    experience: "8+ Years",
+    specialization: "Chemistry, HSC",
+    bio: "Dedicated chemistry educator with a track record of producing A+ students in board examinations.",
+    courses: 4,
+    students: 900,
+    rating: 4.8,
+    whatsapp: "8801612345678",
+    facebook: "https://facebook.com",
+    email: "fatima@educonnect.bd",
+    featured: true,
+  },
+  {
+    id: "5",
+    name: "Tanvir Hasan",
+    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    qualification: "B.Sc. CSE, NSU",
+    experience: "6+ Years",
+    specialization: "ICT, Programming",
+    bio: "Young and dynamic ICT instructor bringing modern programming skills to Bangladeshi students.",
+    courses: 3,
+    students: 600,
+    rating: 4.6,
+    whatsapp: "8801512345678",
+    facebook: "https://facebook.com",
+    email: "tanvir@educonnect.bd",
+  },
+];
+
+export function getTeacherById(id: string) {
+  return teachers.find((t) => t.id === id);
+}
+
+export function getFeaturedTeachers() {
+  return teachers.filter((t) => t.featured);
+}

@@ -1,0 +1,82 @@
+import type { GovtService } from "@/lib/types";
+
+export const govtServices: GovtService[] = [
+  {
+    id: "1",
+    name: "e-Passport",
+    description: "Apply for or renew your Bangladesh e-Passport online through the official government portal.",
+    url: "https://www.epassport.gov.bd",
+    icon: "BookOpenCheck",
+  },
+  {
+    id: "2",
+    name: "National ID (NID)",
+    description: "Register, verify, or update your National Identity Card information online.",
+    url: "https://services.nidw.gov.bd",
+    icon: "IdCard",
+  },
+  {
+    id: "3",
+    name: "Birth & Death Registration",
+    description: "Register births and deaths, and obtain certified copies of vital records.",
+    url: "https://bdris.gov.bd",
+    icon: "FileText",
+  },
+  {
+    id: "4",
+    name: "Land Services",
+    description: "Access land records, ownership verification, and related land administration services.",
+    url: "https://land.gov.bd",
+    icon: "Map",
+  },
+  {
+    id: "5",
+    name: "Land Tax",
+    description: "Pay land development tax and access land tax related services online.",
+    url: "https://ldtax.gov.bd",
+    icon: "Receipt",
+  },
+  {
+    id: "6",
+    name: "e-Mutation",
+    description: "Apply for land mutation and track mutation application status online.",
+    url: "https://mutation.land.gov.bd",
+    icon: "Landmark",
+  },
+  {
+    id: "7",
+    name: "Income Tax (TIN)",
+    description: "Register for TIN, file income tax returns, and access NBR e-services.",
+    url: "https://secure.incometax.gov.bd",
+    icon: "Calculator",
+  },
+  {
+    id: "8",
+    name: "Police Clearance",
+    description: "Apply for Police Clearance Certificate (PCC) for employment and travel purposes.",
+    url: "https://pcc.police.gov.bd",
+    icon: "Shield",
+  },
+  {
+    id: "9",
+    name: "Bangladesh National Portal",
+    description: "The central gateway to all government services and information in Bangladesh.",
+    url: "https://bangladesh.gov.bd",
+    icon: "Globe",
+  },
+  {
+    id: "10",
+    name: "Emergency Helpline",
+    description: "Important national emergency and government helpline numbers for citizens.",
+    url: "#",
+    icon: "Phone",
+    isHelpline: true,
+    helplineNumbers: [
+      { label: "National Emergency", number: "999" },
+      { label: "Government Information", number: "333" },
+      { label: "Women & Child Helpline", number: "109" },
+      { label: "Child Helpline", number: "1098" },
+      { label: "Anti-Corruption Hotline", number: "199" },
+    ],
+  },
+];

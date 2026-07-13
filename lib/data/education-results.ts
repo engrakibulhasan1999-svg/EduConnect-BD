@@ -1,0 +1,60 @@
+import type { EducationResult } from "@/lib/types";
+
+export const educationResults: EducationResult[] = [
+  {
+    id: "1",
+    title: "SSC & HSC Results",
+    description: "Check your Secondary School Certificate and Higher Secondary Certificate examination results.",
+    url: "https://www.educationboardresults.gov.bd",
+    logo: "GraduationCap",
+    type: "result",
+  },
+  {
+    id: "2",
+    title: "Education Boards Bangladesh",
+    description: "Official portal of all education boards in Bangladesh with notices and information.",
+    url: "https://www.educationboard.gov.bd",
+    logo: "School",
+    type: "info",
+  },
+  {
+    id: "3",
+    title: "Bangladesh Technical Education Board (BTEB)",
+    description: "Technical and vocational education board results, notices, and academic information.",
+    url: "https://bteb.gov.bd",
+    logo: "Wrench",
+    type: "result",
+  },
+  {
+    id: "4",
+    title: "National University Results",
+    description: "Check degree, honours, and masters examination results from National University.",
+    url: "https://results.nu.ac.bd",
+    logo: "University",
+    type: "result",
+  },
+  {
+    id: "5",
+    title: "National University",
+    description: "Official National University portal for academic programs and administration.",
+    url: "https://www.nu.ac.bd",
+    logo: "Building2",
+    type: "info",
+  },
+  {
+    id: "6",
+    title: "University Grants Commission (UGC)",
+    description: "Higher education regulatory body — university lists, scholarships, and policies.",
+    url: "https://ugc.gov.bd",
+    logo: "Award",
+    type: "info",
+  },
+  {
+    id: "7",
+    title: "Secondary & Higher Education Division",
+    description: "Scholarship programs, higher education policies, and SHED official information.",
+    url: "https://www.shed.gov.bd",
+    logo: "BookOpen",
+    type: "info",
+  },
+];
